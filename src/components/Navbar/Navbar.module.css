@@ -1,0 +1,39 @@
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: #eaeaea;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.container img {
+  width: 150px;
+}
+.header section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header section svg {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .header section svg {
+    width: 20px;
+    height: 20px;
+  }
+  .header section {
+    gap: 10px;
+  }
+  .container img {
+    width: 120px;
+  }
+}

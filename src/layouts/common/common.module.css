@@ -1,0 +1,38 @@
+.main {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.aside {
+  background-color: #032d49;
+  border: none;
+}
+.aside a {
+  color: #fff;
+  border: none;
+  margin: 5px;
+}
+.aside a:hover {
+  background-color: #2d5672;
+}
+.active {
+  background-color: #097c76;
+}
+.header {
+  background-color: #097c76;
+  color: #fff;
+}
+.header h1 {
+  padding: 10px;
+}
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+      }
+}

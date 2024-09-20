@@ -1,0 +1,8 @@
+.main{
+    display: flex;
+    flex-direction: column;
+}
+.main .header{
+    color: #fff;
+    background-color: #032d49;
+}

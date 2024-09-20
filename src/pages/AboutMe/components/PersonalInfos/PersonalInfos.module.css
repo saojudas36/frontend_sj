@@ -1,0 +1,49 @@
+.container{
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 4px;
+}
+.container header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container header div{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.personalInfos {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px 200px;
+  font-size: 14px;
+}
+
+.personalInfos dt {
+  font-weight: bold;
+  text-align: left;
+}
+
+.personalInfos dd {
+  text-align: right;
+  margin: 0; 
+}
+@media (max-width: 768px) {
+  .personalInfos {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 8px 20px;
+    font-size: 12px;
+  }
+  .container header div{
+    font-size: 14px;
+  }
+  .container header div svg{
+    width: 15px;
+    height: 15px;
+  }
+}

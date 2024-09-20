@@ -1,0 +1,33 @@
+/* Garante que o layout ocupe toda a altura da tela */
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.main-content {
+  display: flex;
+  margin-top: 60px;
+  flex: 1;
+}
+.conteudo-paginas {
+  overflow: auto;
+  transition: margin 0.3s ease-out;
+  flex: 1;
+}
+
+/* Ajuste para a sidebar em telas maiores */
+@media (min-width: 769px) {
+  .conteudo-paginas.shifted {
+    margin-left: 250px; /* Desloca o conteúdo para a direita */
+  }
+}
+
+/* Ajuste para a sidebar em telas menores */
+@media (max-width: 768px) {
+  .conteudo-paginas.shifted {
+    margin-top: 95px; /* Desloca o conteúdo para baixo */
+  }
+  .main-content {
+    margin-top: 50px;
+  }
+}

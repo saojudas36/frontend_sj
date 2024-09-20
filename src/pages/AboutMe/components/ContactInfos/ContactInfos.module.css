@@ -1,0 +1,55 @@
+.container {
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+  max-height: 160px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.container header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container header div{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.container header div svg{
+  width: 25px;
+  height: 25px;
+}
+.contactInfos {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px 200px;
+  font-size: 14px;
+}
+
+.contactInfos dt {
+  font-weight: bold;
+  text-align: left;
+}
+
+.contactInfos dd {
+  text-align: right;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .contactInfos {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 8px 20px;
+    font-size: 12px;
+  }
+  .container header div{
+    font-size: 14px;
+  }
+  .container header div svg{
+    width: 15px;
+    height: 15px;
+  }
+}

@@ -1,0 +1,47 @@
+.aside {
+  width: 250px;
+  border-right: 1px solid #ccc;
+}
+.aside header {
+  background: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+.aside header svg {
+  width: 20px;
+  height: 20px;
+}
+.aside a {
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  text-decoration: none;
+  color: #333;
+  align-items: center;
+  gap: 5px;
+}
+.aside a:hover {
+  background-color: rgb(164, 198, 236);
+}
+.active {
+  background-color: rgb(164, 198, 236);
+}
+@media (max-width: 768px) {
+  .aside ul {
+    display: grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  .aside {
+    width: 100%;
+  }
+  .aside a{
+    font-size: 14px;
+    flex: 1;
+    gap: 0;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,23 @@
+.main{
+    display: flex;
+    height: 100vh;
+}
+.main section{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.container{
+    padding: 10px;
+    overflow-y: auto;
+}
+@media (max-width: 768px) {
+    .container {
+        max-height: 500px;
+        display: flex;
+        flex-direction: column;
+    }
+    .main{
+        flex-direction: column;
+    }
+}

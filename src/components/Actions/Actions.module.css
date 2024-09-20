@@ -1,0 +1,11 @@
+.container main{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.container{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}

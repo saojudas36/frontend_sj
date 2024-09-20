@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  gap: 10px;
+}
+
+.container button {
+  padding: 10px 20px;
+  border-radius: 5px 5px 0 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: #ffff;
+}
+
+button:hover {
+  background-color: #eceaea;
+}
+
+button.active {
+  font-weight: bold;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-bottom: 2px solid #ffff;
+
+}
